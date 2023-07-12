@@ -9,7 +9,7 @@ df.columns = ["Date","Time","Grade","Type","Loc"]
 
 
 #SORT_ORDER = {"7-": 0, "7": 1, "7+": 2, "8-":3, "8":4}
-SORT_ORDER = ['6+','7-','7','7+','8-','8','8+']
+SORT_ORDER = ['6','6+','7-','7','7+','8-','8','8+']
 grades=list(set(df["Grade"].tolist()))
 grades.sort(key=lambda val: SORT_ORDER.index(val))
 
